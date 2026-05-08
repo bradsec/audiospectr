@@ -1,0 +1,16 @@
+{
+  "type": "bars",
+  "bar_count": 40,
+  "color": "#e8a040",
+  "secondary_color": "#c06820",
+  "mirror": false,
+  "corner_radius": 4,
+  "peak_indicators": false,
+  "smoothing_type": "average",
+  "smoothing_factor": 0.88,
+  "amplitude_scale": 4.0,
+  "response_curve": 0.82,
+  "effects": {
+    "glow": false
+  }
+}

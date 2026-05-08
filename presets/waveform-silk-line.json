@@ -1,0 +1,8 @@
+{
+  "type": "waveform",
+  "color": "#ffffff",
+  "line_width": 4,
+  "effects": {
+    "glow": false
+  }
+}

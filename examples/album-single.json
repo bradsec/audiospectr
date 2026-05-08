@@ -1,0 +1,45 @@
+{
+  "resolution": [1920, 1080],
+  "fps": 30,
+  "audio": "track.mp3",
+  "output": "album-single.mp4",
+  "background": {
+    "type": "image",
+    "path": "cover.jpg",
+    "fit": "cover",
+    "blur": 6,
+    "dim": 0.45
+  },
+  "metadata": {"title": "Track Name", "artist": "Artist Name"},
+  "layers": [
+    {
+      "type": "bars",
+      "x": 0, "y": 700,
+      "width": 1920, "height": 340,
+      "bar_count": 96,
+      "color": "#00f5ff",
+      "secondary_color": "#ff00cc",
+      "mirror": true,
+      "effects": {
+        "glow": true,
+        "glow_intensity": 1.5,
+        "glow_radius": 15
+      }
+    },
+    {
+      "type": "text",
+      "x": 80, "y": 60,
+      "width": 1760, "height": 80,
+      "content": "{artist} — {title}",
+      "font_size": 48,
+      "color": "#ffffff"
+    },
+    {
+      "type": "timer",
+      "x": 0, "y": 1062,
+      "width": 1920, "height": 18,
+      "color": "#00f5ff",
+      "background_color": "#111111"
+    }
+  ]
+}

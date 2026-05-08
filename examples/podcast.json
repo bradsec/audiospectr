@@ -1,0 +1,33 @@
+{
+  "resolution": [1920, 1080],
+  "fps": 30,
+  "audio": "episode.mp3",
+  "output": "podcast.mp4",
+  "background": {"type": "color", "color": "#0a0a0a"},
+  "metadata": {"title": "Episode 42", "artist": "My Podcast"},
+  "layers": [
+    {
+      "type": "waveform",
+      "x": 0, "y": 380,
+      "width": 1920, "height": 320,
+      "color": "#ffffff",
+      "line_width": 3
+    },
+    {
+      "type": "text",
+      "x": 80, "y": 80,
+      "width": 1760, "height": 80,
+      "content": "{artist}  ·  {title}",
+      "font_size": 44,
+      "color": "#cccccc"
+    },
+    {
+      "type": "timer",
+      "x": 0, "y": 1062,
+      "width": 1920, "height": 18,
+      "style": "bar",
+      "color": "#ffffff",
+      "background_color": "#222222"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "pulse",
+  "max_scale": 1.8,
+  "ring_width": 6,
+  "ring_count": 2,
+  "spoke_count": 8,
+  "spoke_length": 0.35,
+  "spoke_width": 3,
+  "core": true,
+  "core_scale": 0.28,
+  "rotation_speed": 0.4,
+  "color": "#00d4ff",
+  "glow_intensity": 1.5,
+  "analyzer_range": [20, 250],
+  "effects": {
+    "glow": true,
+    "glow_intensity": 1.4,
+    "glow_radius": 20,
+    "glow_scale": 0.4
+  }
+}

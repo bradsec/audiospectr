@@ -1,0 +1,19 @@
+{
+  "type": "bars",
+  "bar_count": 128,
+  "color": "#e8fbff",
+  "secondary_color": "#3aa8ff",
+  "mirror": true,
+  "corner_radius": 3,
+  "peak_indicators": true,
+  "smoothing_type": "proportional_decrease",
+  "smoothing_factor": 0.9,
+  "amplitude_scale": 3.2,
+  "response_curve": 0.66,
+  "effects": {
+    "glow": true,
+    "glow_intensity": 1.15,
+    "glow_radius": 12,
+    "glow_scale": 0.5
+  }
+}

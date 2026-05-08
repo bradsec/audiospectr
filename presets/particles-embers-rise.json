@@ -1,0 +1,17 @@
+{
+  "type": "particles",
+  "flow_mode": "directional",
+  "direction": 270,
+  "spawn_rate": 18,
+  "velocity_multiplier": 7.0,
+  "particle_size": 5,
+  "color": "#ff6600",
+  "lifetime": 110,
+  "max_particles": 2800,
+  "effects": {
+    "glow": true,
+    "glow_intensity": 1.25,
+    "glow_radius": 10,
+    "glow_scale": 0.4
+  }
+}

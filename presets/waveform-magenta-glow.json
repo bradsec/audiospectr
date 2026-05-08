@@ -1,0 +1,11 @@
+{
+  "type": "waveform",
+  "color": "#ff3df2",
+  "line_width": 6,
+  "effects": {
+    "glow": true,
+    "glow_intensity": 1.55,
+    "glow_radius": 16,
+    "glow_scale": 0.4
+  }
+}

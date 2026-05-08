@@ -1,0 +1,17 @@
+{
+  "type": "particles",
+  "flow_mode": "radial",
+  "spawn_rate": 24,
+  "velocity_multiplier": 8.5,
+  "particle_size": 5,
+  "color": "#ffdd66",
+  "lifetime": 80,
+  "spawn_spread": 0.28,
+  "max_particles": 3600,
+  "effects": {
+    "glow": true,
+    "glow_intensity": 1.2,
+    "glow_radius": 8,
+    "glow_scale": 0.4
+  }
+}

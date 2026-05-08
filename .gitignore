@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Planning and agent scratch files
+*plan*.md
+*plans*/
+docs/superpowers/plans/
+docs/superpowers/specs/
+CLAUDE.md
+AGENTS.md
+.claude/
+.codex/
+.agents/
+claude*.md
+codex*.md
+*codex*plan*
+*claude*plan*
+*superpowers*
+
+# Generated media and user assets
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.ogg
+*.aac
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+
+# Local render output directories
+output/
+outputs/
+temp/
+tmp/

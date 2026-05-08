@@ -1,0 +1,18 @@
+{
+  "type": "wavebars",
+  "bar_count": 58,
+  "color": "#0fcc74",
+  "spacing_ratio": 0.2,
+  "corner_radius": 4,
+  "amplitude_scale": 3.0,
+  "response_curve": 0.85,
+  "reflection_alpha": 150,
+  "height_ratio": 0.38,
+  "smoothing_factor": 0.52,
+  "effects": {
+    "glow": true,
+    "glow_intensity": 1.15,
+    "glow_radius": 8,
+    "glow_scale": 0.45
+  }
+}

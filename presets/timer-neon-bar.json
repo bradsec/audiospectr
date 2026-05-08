@@ -1,0 +1,7 @@
+{
+  "type": "timer",
+  "style": "bar",
+  "color": "#00f5ff",
+  "background_color": "#111111",
+  "corner_radius": 6
+}

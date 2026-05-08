@@ -1,0 +1,18 @@
+{
+  "type": "circular",
+  "bar_count": 80,
+  "color": "#ffb000",
+  "bar_width": 7,
+  "rotation_speed": 0.5,
+  "smoothing_type": "average",
+  "smoothing_factor": 0.78,
+  "amplitude_scale": 5.2,
+  "response_curve": 0.48,
+  "min_bar_length": 8,
+  "effects": {
+    "glow": true,
+    "glow_intensity": 1.45,
+    "glow_radius": 18,
+    "glow_scale": 0.45
+  }
+}
