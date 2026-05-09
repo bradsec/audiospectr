@@ -79,6 +79,76 @@
 |:---:|:---:|:---:|:---:|
 | ![neon](docs/images/presets/neon.png)<br>`neon` | ![minimal](docs/images/presets/minimal.png)<br>`minimal` | ![cyberpunk](docs/images/presets/cyberpunk.png)<br>`cyberpunk` | ![synthwave](docs/images/presets/synthwave.png)<br>`synthwave` |
 
+## Background Image Modes
+
+The `background` block in a project file (or `--background-fit` / `--background-color` flags in quick mode) controls how images are positioned and processed before layers are composited on top.
+
+### Fit
+
+| | |
+|:---:|:---:|
+| ![cover with 16:9 image](docs/images/backgrounds/bg-cover-16x9.png)<br>**`cover`** — 16:9 image, bars visualiser | ![cover with 1:1 image](docs/images/backgrounds/bg-cover-1x1.png)<br>**`cover`** — 1:1 image cropped to fill, circular visualiser |
+| ![contain with 1:1 image](docs/images/backgrounds/bg-contain-1x1.png)<br>**`contain`** — 1:1 image letterboxed with black padding, waveform visualiser | ![stretch with 1:1 image](docs/images/backgrounds/bg-stretch.png)<br>**`stretch`** — 1:1 image distorted to fill, wavebars visualiser |
+| ![center with 1:1 image](docs/images/backgrounds/bg-center.png)<br>**`center`** — 1:1 image at original size, pulse visualiser | |
+
+- **`cover`** — scales to fill the frame, cropping the longer dimension. Best for wide backgrounds and blurred album art.
+- **`contain`** — fits the whole image inside the frame, padding the remaining area with `color`. Best for square album covers you want to display in full.
+- **`stretch`** — ignores aspect ratio and forces the image to exactly match the frame size.
+- **`center`** — places the image at its native pixel size centred on the frame. If the image is smaller than the frame, `color` fills the edges; if larger, it is cropped to centre.
+
+### Blur and dim
+
+| | | |
+|:---:|:---:|:---:|
+| ![blur](docs/images/backgrounds/bg-blur.png)<br>**`blur: 8`** — particles visualiser | ![dim](docs/images/backgrounds/bg-dim.png)<br>**`dim: 0.6`** — text visualiser | ![blur + dim](docs/images/backgrounds/bg-blur-dim.png)<br>**`blur: 6, dim: 0.45`** — timer visualiser |
+
+`blur` applies a Gaussian blur (value is the radius in pixels). `dim` blends the image toward black — `0.0` leaves the image unchanged, `1.0` produces solid black. Combine both to soften and darken a background so visualiser layers and text read clearly on top.
+
+### Config examples
+
+Square album cover centred with black letterbox:
+
+```json
+{
+  "background": {
+    "type": "image",
+    "path": "cover.jpg",
+    "fit": "contain",
+    "color": "#000000"
+  }
+}
+```
+
+Full-screen cover image blurred and dimmed (typical album-art treatment):
+
+```json
+{
+  "background": {
+    "type": "image",
+    "path": "cover.jpg",
+    "fit": "cover",
+    "blur": 6,
+    "dim": 0.45
+  }
+}
+```
+
+Soft atmospheric background with parallax drift:
+
+```json
+{
+  "background": {
+    "type": "image",
+    "path": "background.jpg",
+    "fit": "cover",
+    "blur": 10,
+    "dim": 0.3,
+    "parallax": true,
+    "parallax_speed": 0.03
+  }
+}
+```
+
 ## Requirements
 
 - Python 3.11 or newer
