@@ -633,17 +633,3 @@ This is an independent, original implementation. The following projects provided
 - **[seewav](https://github.com/adefossez/seewav)** by Alexandre Défossez (Unlicense) — the symmetric waveform-bar visual style reproduced in the `wavebars` layer and the `wavebars-seewav-*` presets.
 
 No source code from either project was copied or modified. The `wavebars-seewav-*` preset names are an explicit attribution to seewav's aesthetic.
-
-## Development Notes
-
-The planned architecture is implemented in:
-
-- `app/audio.py`: audio loading and `FrameData` generation
-- `app/compositor.py`: background creation, layer compositing, progress display
-- `app/layers/`: visualiser layer implementations
-- `app/effects.py`: glow, grain, and blur effects
-- `app/encoder.py`: FFmpeg subprocess wrapper
-- `app/presets.py`: preset and project loading
-- `app/cli.py`: Typer CLI entry point
-
-Generated media, cache directories, and local virtual environments should not be committed.
